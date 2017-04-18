@@ -22,21 +22,21 @@
 \input{includes/preamble}
 \input{includes/defs}
 \input{includes/thesisdefs}
-\svnidlong{$LastChangedBy$}{$LastChangedRevision$}{$LastChangedDate$}{$HeadURL: http://freevariable.com/dissertation/branches/diss-template/dissertation.tex $} 
+\input{includes/acros}
 
 \clearpage\pagenumbering{roman}  % This makes the page numbers Roman (i, ii, etc)
 
-\title{Not Finished, But Abandoned}
-\author{Buckingham B.~Badger}
-\department{Computer Sciences}
+\title{My Awesome Title}
+\author{Arrielle C.~Opotowsky}
+\department{Engineering Physics}
 
-\date{2008}
+\date{2017}
 
 \begin{document}
 
 %%% Uncomment the following if your .bib contains references that you will not 
 %%% explicitly cite, but that should be in the final bibliography:
-% \nocite{*}
+ \nocite{*}
 
 \ifpdf
 \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
@@ -46,33 +46,20 @@
 
 \maketitle
 
-%% Add \part declarations if you want, but it's not necessary
-%\part{Preliminaries}
-
 \include{frontmatter/frontmatter}
 
 %% Now include the tex files for each chapter, like so (I put these in separate dirs): 
 % \include{intro/intro}
 % \include{motivation/motivation}
-% \include{related/related}
-
-%% etc, etc.
+\include{chapters/methodology/methodology}
 
 %% Do you have appendices?  If so, add them here, just like chapters.
 % \begin{appendices}
 % \include{backmatter/appendix1}
 % \end{appendices}
 
-%% Are you a big nerd with a colophon?  Add it here.
-\begin{colophon}
-\input{backmatter/colophon}
-\end{colophon}
-
 %% McBride is a very nice style (some version is included in this distribution)
 \bibliographystyle{mcbride}
-\bibliography{your-bib-file}
-
-%% Want an index?  Neither did I.
-%\printindex
+\bibliography{dissertation}
 
 \end{document}

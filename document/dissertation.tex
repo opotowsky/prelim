@@ -19,6 +19,9 @@
 %%% You'll want ``oneside'' for the deposit version, but probably not for any versions that don't need to meet the UW requirements
 \documentclass[12pt,oneside,letterpaper]{memoir}
 
+\usepackage{todonotes}
+\usepackage{acronym}{glossaries}
+
 \input{includes/preamble}
 \input{includes/defs}
 \input{includes/thesisdefs}
@@ -34,9 +37,11 @@
 
 \begin{document}
 
+\listoftodos
+
 %%% Uncomment the following if your .bib contains references that you will not 
 %%% explicitly cite, but that should be in the final bibliography:
- \nocite{*}
+\nocite{*}
 
 \ifpdf
 \DeclareGraphicsExtensions{.pdf, .jpg, .tif}
